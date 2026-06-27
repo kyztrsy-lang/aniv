@@ -1,83 +1,115 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 18th Anniversary ❤️</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 
-<title>Happy Birthday 💚</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
-
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Pacifico&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<div id="loading">
-<h2>Loading...</h2>
-</div>
+<!-- Floating Hearts -->
+<div class="hearts"></div>
 
-<div class="leaf-container"></div>
+<!-- Floating Stars -->
+<div class="stars"></div>
 
-<section class="hero">
+<!-- Audio -->
+<audio id="music" loop>
+    <source src="tmn-nidup.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Cover -->
+<section class="cover">
 
 <div class="glass">
 
-<h1>Happy Birthday</h1>
+<img src="left-bear.png" class="bear left">
 
-<h2>My Aunt 💚</h2>
+<div class="title">
+
+<h1>Happy</h1>
+
+<h2>18th Anniversary 💚🩵</h2>
 
 <p>
-
-Minggu, 28, Juni, 2026
+Thank you for filling my life with unforgettable, beautiful moments.
 </p>
 
-<button id="openLetter">
-
-Open Letter 💌
-
+<button id="openBtn">
+💌 Open Our Memories
 </button>
+
+</div>
+
+<img src="right-bear.png" class="bear right">
 
 </div>
 
 </section>
 
-<h2>The Memories</h2>
+<!-- Gallery -->
+
+<section id="gallery" class="hidden">
+
+<h2 class="section-title">
+📸 Our Memories
+</h2>
 
 <div class="photos">
-    <img src="photo.jpeg" alt="Foto 1">
-    <img src="photo2.jpeg" alt="Foto 2">
-    <img src="photo3.jpeg" alt="Foto 3">
+
+<div class="photo-card">
+<img src="1.jpeg" alt="Foto 1">
 </div>
 
+<div class="photo-card">
+<img src="2.jpeg" alt="Foto 2">
+</div>
 
-<button id="giftBtn">
+<div class="photo-card">
+<img src="3.jpeg" alt="Foto 3">
+</div>
 
-Open Gift
-
-</button>
+</div>
 
 </section>
 
-<section class="letter" id="letter">
+<!-- Letter -->
 
-<div class="glass">
+<section id="letter" class="hidden">
 
-<h2>For You 💚</h2>
+<div class="letter-card">
+
+<h2>💌 For You</h2>
 
 <p>
 
-Selamat ulang tahun.
+Happy 18th Anniversary 💚🩵
 
-Semoga hari istimewa ini membawa berkah, kesehatan, dan kebahagiaan yang tak terhingga di usia yang baru
+<br><br>
 
-Semoga lancar rezeki dan segala urusan 
+Ummi dan Abi. 
+Terima kasih atas setiap pengorbanan dan cinta tulus yang menghidupkan rumah ini.
+Semoga Allah selalu menjaga ikatan suci kalian
+
+<br><br>
+
+Menatap perjalanan 18 tahun yang sudah kalian lalui bersama membuat kami sadar betapa besarnya komitmen, kesabaran, dan cinta yang telah kalian korbankan. 
+
+<br><br>
+
+Terima kasih telah membangun rumah yang tidak hanya sekadar tempat berteduh, tetapi juga tempat yang penuh kehangatan, rasa aman, dan kedamaian bagi kami anak-anakmu. Semoga di usia pernikahan yang semakin matang ini,
+Ayah dan Ibu selalu dikaruniai kesehatan, perlindungan, dan kebahagiaan, Lancar rezekinya dan mudah segala urusan
 
 
+<br><br>
+
+Note: Kata katanya emg pake google kyk g niat tp bikinnya niat ya,
+kalo g niat g akan aku coding smpe malam 😎
 
 </p>
 
@@ -85,21 +117,43 @@ Semoga lancar rezeki dan segala urusan
 
 </section>
 
-<footer>
+<!-- Ending -->
 
-Made with ka💚
+<section id="ending" class="hidden">
 
-</footer>
+<img src="couple-bear.png" class="ending-bear">
 
-<canvas id="confetti"></canvas>
+<h2>
 
-<audio id="music" loop>
-    <source src="ultah.mp3" type="audio/mpeg">
-</audio>
+Happy Anniversary 💚
+
+</h2>
+
+<p>
+
+by ka
+
+</p>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
 
+
+<img src="1.jpeg" alt="Foto 1">
+<img src="2.jpeg" alt="Foto 2">
+<img src="3.jpeg" alt="Foto 3">
+
+<img src="left-bear.png" class="bear left">
+<img src="right-bear.png" class="bear right">
+
+<img src="couple-bear.png" class="ending-bear">
+
+<audio id="music" loop>
+    <source src="tmn-nidup.mp3" type="audio/mpeg">
+</audio>
